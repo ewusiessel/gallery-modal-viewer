@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700|Roboto+Slab:100,200,300,400,500,600,700|Pacifico:100,200,300,400,500,600,700 ');
+
+a {
+    font-family: "Quicksand",
+        sans-serif;   
+    color: #7b6e5e;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 20px;
