@@ -28,205 +28,362 @@
 </head>
 
 <body id="my-portfolio" data-spy="scroll" data-target=".navbar" data-offset="60">
-    <header class="container-fluid bg-header" id="home">
 
-        <!-- For Adding Background Color -->
-        <div class="header-bg-gray">
 
-            <!-- Navigation Bar Begins  -->
-            <nav class="navbar navbar-light navbar-expand-md bg-white" id="my-navbar">
-                <!-- 'navbar-expand-md' will expand the toggle to display navigational links in the navbar -->
+    <!-- For Adding Background Color -->
+    <div class="header-bg-gray">
 
-                <!-- Navbar Brand Logo -->
-                <a href="#home" class="navbar-brand"><img src="/img/logo28.2.svg" style="height: 50px;"></a>
+        <!-- Navigation Bar Begins  -->
+        <nav class="navbar navbar-light navbar-expand-md bg-white" id="my-navbar">
+            <!-- 'navbar-expand-md' will expand the toggle to display navigational links in the navbar -->
 
-                <!-- Toggler button to replace the navbar when the navbar is collapsed -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
-                    aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!-- Navbar Brand Logo -->
+            <a href="#home" class="navbar-brand"><img src="/img/logo28.2.svg" style="height: 50px;"></a>
 
-                <!-- Navbar Links -->
-                <div class="collapse navbar-collapse" id="navbar-content">
-                    <!-- "ml-auto" right aligns the links -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#gallery" class="nav-link">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#aboutme" class="nav-link">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-            </nav>
-            <!-- Navigation Bar Ends -->
+            <!-- Toggler button to replace the navbar when the navbar is collapsed -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
+                aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <!-- Image Gallery Begins -->
-            <section class="section-padding" id="portfolio">
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <!-- "ml-auto" right aligns the links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutme" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+        </nav>
+        <!-- Navigation Bar Ends -->
+
+        <!-- Image Gallery Section Begins -->
+        <section class="section-padding" id="portfolio">
+            <div class="container">
+
+                <!-- Image Grid for Thumbnails -->
                 <div class="container">
+                    <div id="my-grid" class="grid-padding">
+                        <div class="row">
 
-                    <!-- Image Grid for Thumbnails -->
-                    <div class="container">
-                        <div id="my-grid" class="grid-padding">
-                            <div class="row">
+                            <!-- First Column -->
+                            <div class="col-sm-3">
 
-                                <!-- First Column -->
-                                <div class="col-sm-3">
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/alvin-mahmudov-NSVJAAXOYHs-unsplash_01.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(1)"></div>
+                                <div class="row"><img
+                                        src="img/wedding_photos/alvin-mahmudov-NSVJAAXOYHs-unsplash_01.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(1)"></div>
 
 
-                                    <div class="row"><img
-                                            src="img/wedding_photos/alvin-mahmudov-sYIqGW3hufI-unsplash_02.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(2)"></div>
+                                <div class="row"><img
+                                        src="img/wedding_photos/alvin-mahmudov-sYIqGW3hufI-unsplash_02.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(2)"></div>
 
 
-                                    <div class="row"><img
-                                            src="img/wedding_photos/cindy-baffour-nMBZq4yy92k-unsplash_03.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(3)"></div>
+                                <div class="row"><img src="img/wedding_photos/cindy-baffour-nMBZq4yy92k-unsplash_03.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(3)"></div>
 
 
-                                    <div class="row"><img
-                                            src="img/wedding_photos/alvin-mahmudov-436ZVxZOtEM-unsplash_04.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(4)"></div>
+                                <div class="row"><img
+                                        src="img/wedding_photos/alvin-mahmudov-436ZVxZOtEM-unsplash_04.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(4)"></div>
 
-                                    <div class="row"><img
-                                            src="img/wedding_photos/brooke-cagle-vZ7ezwU9Bc0-unsplash_05.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(5)"></div>
-
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/chuttersnap-2qlurUeoi3A-unsplash_06.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(6)"></div>
+                                <div class="row"><img src="img/wedding_photos/brooke-cagle-vZ7ezwU9Bc0-unsplash_05.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(5)"></div>
 
 
-                                    <div class="row"><img
-                                            src="img/wedding_photos/wu-jianxiong-4TET084JWaA-unsplash_07.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(7)">
-                                    </div>
-                                </div>
+                                <div class="row"><img src="img/wedding_photos/chuttersnap-2qlurUeoi3A-unsplash_06.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(6)"></div>
 
 
-                                <!-- Second Column -->
-                                <div class=" col-sm-3">
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/desiree-fawn-NKase2HvnsI-unsplash_08.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(8)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/elena-ferrer-34w3deK2DvY-unsplash_09.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(9)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/shelbey-miller-10cxLuistys-unsplash_10.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(10)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/ifeoluwadayo-ogunderu-iSF1Ma6GOfI-unsplash_11.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(11)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/sweet-ice-cream-photography-BJAKGX0-9_s-unsplash_12.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(12)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/jenna-norman-4nPVmlj8ngM-unsplash_13.jpg"
-                                            class=" fit-image" onclick="openModal();currentSlide(13)"></div>
-
-                                    <div class="row"><img src="img/wedding_photos/todd-ruth-tebYv7a8wMI-unsplash_14.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(14)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/marc-a-sporys-NO8Sj4dKE8k-unsplash_15.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(15)"></div>
-
-                                            <div class="row"><img src="img/wedding_photos/zelle-duda-Zd6ZHK_Gh7s-unsplash_30.jpg" class="fit-image"
-                                                    onclick="openModal();currentSlide(30)"></div>
-
-                                </div>
-
-                                <!-- Third Column -->
-                                <div class="col-sm-3">
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/marcus-lewis-87DgFV9SOc4-unsplash_16.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(16)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/nicole-honeywill-B_ImzwV7-l0-unsplash_17.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(17)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/petr-ovralov-jNpttMRlb_Y-unsplash_18.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(18)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/nicole-honeywill-2S6xEssCbt8-unsplash_19.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(19)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/valerie-elash-bI8Yv7AH6b0-unsplash_20.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(20)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/marius-muresan-hcn12YN0ckM-unsplash_21.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(21)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/samantha-gades-7JUDLPlA114-unsplash_22.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(22)"></div>
-                                </div>
-
-                                <!-- Forth Column -->
-                                <div class="col-sm-3">
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/samantha-gades-CsrwM-bHQIg-unsplash_23.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(23)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/stella-de-smit-sFHlUfyc23M-unsplash_24.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(24)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/ifeoluwadayo-ogunderu-KjUBgOoNqo0-unsplash_25.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(25)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/mei-bakker-UgOSM6gye3E-unsplash_26.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(26)"></div>
-
-                                    <div class="row"><img src="img/wedding_photos/thomas-ae-295NLwGdrKM-unsplash_27.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(27)"></div>
-
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/tiko-giorgadze-i5SbksX33RM-unsplash_28.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(28)"></div>
-
-                                    <div class="row"><img
-                                            src="img/wedding_photos/pablo-heimplatz-fVL0zZdk-R4-unsplash_29.jpg"
-                                            class="fit-image" onclick="openModal();currentSlide(29)"></div>
+                                <div class="row"><img src="img/wedding_photos/wu-jianxiong-4TET084JWaA-unsplash_07.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(7)">
                                 </div>
                             </div>
 
+
+                            <!-- Second Column -->
+                            <div class=" col-sm-3">
+
+                                <div class="row"><img src="img/wedding_photos/desiree-fawn-NKase2HvnsI-unsplash_08.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(8)"></div>
+
+                                <div class="row"><img src="img/wedding_photos/elena-ferrer-34w3deK2DvY-unsplash_09.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(9)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/shelbey-miller-10cxLuistys-unsplash_10.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(10)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/ifeoluwadayo-ogunderu-iSF1Ma6GOfI-unsplash_11.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(11)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/sweet-ice-cream-photography-BJAKGX0-9_s-unsplash_12.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(12)"></div>
+
+                                <div class="row"><img src="img/wedding_photos/jenna-norman-4nPVmlj8ngM-unsplash_13.jpg"
+                                        class=" fit-image" onclick="openModal();currentSlide(13)"></div>
+
+                                <div class="row"><img src="img/wedding_photos/todd-ruth-tebYv7a8wMI-unsplash_14.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(14)"></div>
+
+                                <div class="row"><img src="img/wedding_photos/marc-a-sporys-NO8Sj4dKE8k-unsplash_15.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(15)"></div>
+                            </div>
+
+                            <!-- Third Column -->
+                            <div class="col-sm-3">
+
+                                <div class="row"><img src="img/wedding_photos/marcus-lewis-87DgFV9SOc4-unsplash_16.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(16)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/nicole-honeywill-B_ImzwV7-l0-unsplash_17.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(17)"></div>
+
+                                <div class="row"><img src="img/wedding_photos/petr-ovralov-jNpttMRlb_Y-unsplash_18.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(18)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/nicole-honeywill-2S6xEssCbt8-unsplash_19.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(19)"></div>
+
+                                <div class="row"><img src="img/wedding_photos/valerie-elash-bI8Yv7AH6b0-unsplash_20.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(20)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/marius-muresan-hcn12YN0ckM-unsplash_21.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(21)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/samantha-gades-7JUDLPlA114-unsplash_22.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(22)"></div>
+                            </div>
+
+                            <!-- Forth Column -->
+                            <div class="col-sm-3">
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/samantha-gades-CsrwM-bHQIg-unsplash_23.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(23)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/stella-de-smit-sFHlUfyc23M-unsplash_24.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(24)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/ifeoluwadayo-ogunderu-KjUBgOoNqo0-unsplash_25.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(25)"></div>
+
+                                <div class="row"><img src="img/wedding_photos/mei-bakker-UgOSM6gye3E-unsplash_26.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(26)"></div>
+
+                                <div class="row"><img src="img/wedding_photos/thomas-ae-295NLwGdrKM-unsplash_27.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(27)"></div>
+
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/tiko-giorgadze-i5SbksX33RM-unsplash_28.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(28)"></div>
+
+                                <div class="row"><img
+                                        src="img/wedding_photos/pablo-heimplatz-fVL0zZdk-R4-unsplash_29.jpg"
+                                        class="fit-image" onclick="openModal();currentSlide(29)"></div>
+
+                                <div class="row"><img src="img/wedding_photos/zelle-duda-Zd6ZHK_Gh7s-unsplash_30.jpg" class="fit-image"
+                                        onclick="openModal();currentSlide(30)"></div>
+    
+                            </div>
                         </div>
+
                     </div>
                 </div>
-        </div>
-        </div>
-        </section>
-        <!-- Image Gallery Ends -->
+            </div>
+    </div>
+    </div>
+    </section>
+    <!-- Image Gallery Section Ends -->
+
+    <!-- Modal for Full Screen Image View Begins -->
+    <div id="my-modal" class="modal">
 
 
-        </div>
+        <!-- Close Button -->
+        <span class="close" onclick="closeModal()">&times;</span>
 
-    </header>
+        <!-- Content for Modal -->
+        <div class="modal-content">
+            <!-- Images for Modal (Image Viewer or Slide Show) -->
+            <div class="my-slides">
+                <div class="numbertext">1 / 30</div>
+                <img src="img/wedding_photos/alvin-mahmudov-NSVJAAXOYHs-unsplash_01.jpg" alt=""
+                    class="landsacape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">2 / 30</div>
+                <img src="img/wedding_photos/alvin-mahmudov-sYIqGW3hufI-unsplash_02.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">3 / 30</div>
+                <img src="img/wedding_photos/cindy-baffour-nMBZq4yy92k-unsplash_03.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">4 / 30</div>
+                <img src="img/wedding_photos/alvin-mahmudov-436ZVxZOtEM-unsplash_04.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">5 / 30</div>
+                <img src="img/wedding_photos/brooke-cagle-vZ7ezwU9Bc0-unsplash_05.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">6 / 30</div>
+                <img src="img/wedding_photos/chuttersnap-2qlurUeoi3A-unsplash_06.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">7 / 30</div>
+                <img src="img/wedding_photos/wu-jianxiong-4TET084JWaA-unsplash_07.jpg" alt="" class="landscape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">8 / 30</div>
+                <img src="img/wedding_photos/desiree-fawn-NKase2HvnsI-unsplash_08.jpg" alt="" class="landscape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">9 / 30</div>
+                <img src="img/wedding_photos/alvin-mahmudov-sYIqGW3hufI-unsplash_02.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">10 / 30</div>
+                <img src="img/wedding_photos/shelbey-miller-10cxLuistys-unsplash_10.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">11 / 30</div>
+                <img src="img/wedding_photos/ifeoluwadayo-ogunderu-iSF1Ma6GOfI-unsplash_11.jpg" alt=""
+                    class="landscape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">12 / 30</div>
+                <img src="img/wedding_photos/sweet-ice-cream-photography-BJAKGX0-9_s-unsplash_12.jpg" alt=""
+                    class="landscape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">13 / 30</div>
+                <img src="img/wedding_photos/jenna-norman-4nPVmlj8ngM-unsplash_13.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">14 / 30</div>
+                <img src="img/wedding_photos/todd-ruth-tebYv7a8wMI-unsplash_14.jpg" alt="" class="landscape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">15 / 30</div>
+                <img src="img/wedding_photos/marc-a-sporys-NO8Sj4dKE8k-unsplash_15.jpg" alt="" class="landscape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">16 / 30</div>
+                <img src="img/wedding_photos/marcus-lewis-87DgFV9SOc4-unsplash_16.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">17 / 30</div>
+                <img src="img/wedding_photos/nicole-honeywill-B_ImzwV7-l0-unsplash_17.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">18 / 30</div>
+                <img src="img/wedding_photos/petr-ovralov-jNpttMRlb_Y-unsplash_18.jpg" alt="" class="landscape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">19 / 30</div>
+                <img src="img/wedding_photos/nicole-honeywill-2S6xEssCbt8-unsplash_19.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">20 / 30</div>
+                <img src="img/wedding_photos/valerie-elash-bI8Yv7AH6b0-unsplash_20.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">21 / 30</div>
+                <img src="img/wedding_photos/marius-muresan-hcn12YN0ckM-unsplash_21.jpg" alt="" class="landscape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">22 / 30</div>
+                <img src="img/wedding_photos/alvin-mahmudov-sYIqGW3hufI-unsplash_02.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">23 / 30</div>
+                <img src="img/wedding_photos/alvin-mahmudov-sYIqGW3hufI-unsplash_02.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">24 / 30</div>
+                <img src="img/wedding_photos/alvin-mahmudov-sYIqGW3hufI-unsplash_02.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">25 / 30</div>
+                <img src="img/wedding_photos/ifeoluwadayo-ogunderu-KjUBgOoNqo0-unsplash_25.jpg" alt=""
+                    class="landscape-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">26 / 30</div>
+                <img src="img/wedding_photos/mei-bakker-UgOSM6gye3E-unsplash_26.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">27 / 30</div>
+                <img src="img/wedding_photos/thomas-ae-295NLwGdrKM-unsplash_27.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">28 / 30</div>
+                <img src="img/wedding_photos/tiko-giorgadze-i5SbksX33RM-unsplash_28.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">29 / 30</div>
+                <img src="img/wedding_photos/pablo-heimplatz-fVL0zZdk-R4-unsplash_29.jpg" alt="" class="potrait-image">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext">30 / 30</div>
+                <img src="img/wedding_photos/zelle-duda-Zd6ZHK_Gh7s-unsplash_30.jpg" alt="" class="potrait-image">
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Modal for Full Screen Image View Ends -->
+
+
+    </div>
+
 </body>
 
 </html>
