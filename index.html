@@ -375,15 +375,67 @@
                 <img src="img/wedding_photos/zelle-duda-Zd6ZHK_Gh7s-unsplash_30.jpg" alt="" class="potrait-image">
             </div>
 
-
-
+            <!-- Next And Previous Button -->
+            <a class="prev" onclick="changeSlides(-1)>&#10094;"></a> <!-- #10094 Code for prev Chevron -->
+            <a class="next" onclick="changeSlides(1)>&#10095;"></a> <!-- #10095 Code for next Chevron -->
         </div>
     </div>
     <!-- Modal for Full Screen Image View Ends -->
 
+    <script type="text/javascript">
+    // Open Modal (Image Viewer or Slide Show) 
+    function openModal(){
+        // Show Image Viewer or modal when any image is clicked
+        document.getElementById('my-modal').style.display = "inline-flex";
+    }
 
-    </div>
+        // Close Modal (Image Viewer or Slide Show) 
+    function closeModal(){
+        document.getElementById('my-modal').style.display = "none";
+    }    
 
+    // Declare variable slideIndex and initialise to 1
+var slideIndexJS = 1;
+
+// Calling function showSlides() by passing variable slideIndexJS. This will hide all the slides initially
+showSlides(slideIndexJS)
+
+// Function to execute Next and previous Buttons operation
+function changeSlides(n){
+showSlides(slideIndexJS += n)  // slideIndexJS = slideIndexJS + n;
+
+}
+
+// Display the image whose thumbnail is clicked
+function currentSlide(n){
+    showSlides(slideIndexJS = n);
+}
+   
+// Main function to operate the slide show or modal or image viewer
+function showSlides (n){
+    var i;
+
+    // Get all elements with class "my-slides"
+    var slidesJS = document. getElementsByClassName("my-slides");
+
+// If the current slide index is greater than total no. of slides, then open slideIndexJS = 1 (begin with first slide after the last slide ends)
+
+if (n > changeSlides.length) { slideIndexJS = 1;}
+
+// If the current slide index is less than 1, then open with slideIndexJS = last (id the previous button is clicked on the first slide then open last slide)
+if (n < 1) { slidesJS.length;}
+
+// Hide all slides initially
+for (i = 0; i < slidesJS.length; i++){
+    slidesJS[i].style.display = "none";
+} 
+
+// Show slide which is clicked
+slidesJS[slideIndexJS-1].style.display = "block";
+
+}
+
+</script>
 </body>
 
 </html>
